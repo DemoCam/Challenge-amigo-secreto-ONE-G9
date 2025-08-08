@@ -2,7 +2,7 @@
 let amigos = [];
 
 function asignarTextoHtml(elemento, texto) {
-    let elementoHTML = document.getElementById(elemento).innerHTML = texto;
+    document.getElementById(elemento).innerHTML = texto;
     return;
 }
 
@@ -20,6 +20,7 @@ function agregarAmigo() {
     
 }
 
+//Funcion para mostrar cada amigo recibido por el input en modo de lista
 function listaEnPantalla() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = ''
@@ -28,3 +29,10 @@ function listaEnPantalla() {
 
 }
 
+function sortearAmigo() {
+    let sortear = amigos[Math.floor(Math.random()* amigos.length)];
+    
+    asignarTextoHtml('resultado', `El amigo seleccionado es ${sortear}`)
+    asignarTextoHtml('listaAmigos', '');
+
+}
