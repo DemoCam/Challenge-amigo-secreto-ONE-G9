@@ -96,7 +96,7 @@ Las contribuciones son bienvenidas. Para contribuir:
 
 ---
 
-⭐ ¡Si te gustó este proyecto, no olvides darle una estrella!
+
 
 ## 🏷️ Etiquetas
 
